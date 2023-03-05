@@ -15,14 +15,13 @@ public class FPSPlayerMovement : MonoBehaviour
 
     void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
-        input = GetComponent<FPSPlayer>().GetInput;
-        controller = GetComponent<CharacterController>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerInput = GetComponent<PlayerInput>();
+        input = GetComponent<FPSPlayer>().GetInput;
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -36,5 +35,7 @@ public class FPSPlayerMovement : MonoBehaviour
         Vector3 move = transform.right *x + transform.forward *z;
 
         controller.Move(move*speed* Time.deltaTime);
+
+     
     }
 }

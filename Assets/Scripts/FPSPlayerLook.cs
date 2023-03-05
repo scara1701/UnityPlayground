@@ -21,10 +21,6 @@ public class FPSPlayerLook : MonoBehaviour
 
     void Awake()
     {
-        input = playerObject.GetComponent<FPSPlayer>().GetInput;
-
-        playerBody = playerObject.transform;
-        playerInput = playerObject.GetComponent<PlayerInput>();
 
     }
 
@@ -32,6 +28,11 @@ public class FPSPlayerLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+                input = playerObject.GetComponent<FPSPlayer>().GetInput;
+
+        playerBody = playerObject.transform;
+        playerInput = playerObject.GetComponent<PlayerInput>();
+
     }
 
     void Update()
