@@ -39,15 +39,14 @@ public class FPSPlayerLook : MonoBehaviour
     {
         Vector2 mousePos = input.Player.Look.ReadValue<Vector2>();
         float mouseX = mousePos.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = mousePos.y * mouseSensitivity;
+        float mouseY = mousePos.y * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
 
-
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-
         playerBody.Rotate(Vector3.up * mouseX);
+        //Debug.Log(mouseX);
     }
 
 
