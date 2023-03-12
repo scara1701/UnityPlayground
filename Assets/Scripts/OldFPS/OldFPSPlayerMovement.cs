@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
-public class FPSPlayerMovement : MonoBehaviour
+public class OldFPSPlayerMovement : MonoBehaviour
 {
     PlayerInput playerInput;
     UnityDefaultPlayerInput input;
@@ -40,7 +40,7 @@ public class FPSPlayerMovement : MonoBehaviour
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
-        input = GetComponent<FPSPlayer>().GetInput;
+        input = GetComponent<OldFPSPlayer>().GetInput;
         controller = GetComponent<CharacterController>();
     }
 

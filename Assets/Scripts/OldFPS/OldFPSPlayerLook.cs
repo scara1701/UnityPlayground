@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
-public class FPSPlayerLook : MonoBehaviour
+public class OldFPSPlayerLook : MonoBehaviour
 {
     private UnityDefaultPlayerInput input;
     private PlayerInput playerInput;
@@ -28,7 +28,7 @@ public class FPSPlayerLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-                input = playerObject.GetComponent<FPSPlayer>().GetInput;
+                input = playerObject.GetComponent<OldFPSPlayer>().GetInput;
 
         playerBody = playerObject.transform;
         playerInput = playerObject.GetComponent<PlayerInput>();

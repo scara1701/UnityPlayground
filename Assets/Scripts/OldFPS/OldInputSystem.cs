@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 
-public class InputSystem : MonoBehaviour
+public class OldInputSystem : MonoBehaviour
 {
 
 

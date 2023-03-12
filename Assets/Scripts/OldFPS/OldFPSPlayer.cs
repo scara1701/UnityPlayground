@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
-public class FPSPlayer : MonoBehaviour
+public class OldFPSPlayer : MonoBehaviour
 {
     private UnityDefaultPlayerInput input;
 
